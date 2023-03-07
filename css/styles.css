@@ -11,7 +11,6 @@
   --light-mode-color: #f4f4fd;
   /* CORNFLOWER */
   --accent-color: #e7e9fc;
-
   /* WHITE-C */
   --white-color: #fff;
 }
@@ -23,8 +22,18 @@ body {
   font-size: 16px;
 }
 
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .list {
   list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .logo {
@@ -72,9 +81,13 @@ body {
 
 .hero {
   background-color: var(--secondary-text-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 48px;
+
   font-size: 56px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -94,6 +107,12 @@ body {
 
   color: var(--white-color);
   background-color: var(--button-normal-color);
+
+  border-width: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  padding: 16px 32px;
 }
 
 .order-btn:hover {
@@ -113,8 +132,17 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.future.section {
+  padding-bottom: 0;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
@@ -125,6 +153,8 @@ body {
 }
 
 .section-subtitle {
+  margin-top: 0;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -135,6 +165,8 @@ body {
 
 .footer-description,
 .section-text {
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
 
@@ -151,18 +183,24 @@ body {
 
 footer {
   background-color: var(--secondary-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
   color: var(--light-mode-color);
 }
 
 .footer-description {
   color: var(--accent-color);
+  width: 264px;
 }
 
 /* PORTFOLIO */
 .products-nav-btn {
+  padding: 12px 24px;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.5;
@@ -180,4 +218,13 @@ footer .logo {
 .products-nav-btn:focus {
   color: var(--white-color);
   background-color: var(--button-hover-color);
+}
+
+section.products {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.products .list {
+  margin-bottom: 72px;
 }
