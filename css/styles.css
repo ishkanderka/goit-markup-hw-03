@@ -25,11 +25,10 @@ body {
   color: var(--body-text-color);
   background-color: var(--white-color);
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  width: 1440px;
-  margin: 0 auto;
 }
-
+img {
+  display: block;
+}
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -44,6 +43,10 @@ body {
   margin-bottom: 0;
 }
 /* HEADER */
+.header {
+  border-bottom: 1px solid var(--accent-color);
+}
+
 .logo {
   display: block;
   padding-top: 24px;
@@ -71,7 +74,6 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--accent-color);
 }
 
 .site-navigation {
@@ -98,10 +100,12 @@ body {
 
   color: var(--body-text-color);
 }
+.site-address {
+  margin-left: auto;
+}
 
 .address-links {
   display: flex;
-  margin-left: 332px;
 }
 
 .address-links > .item:not(:last-child) {
@@ -128,12 +132,17 @@ body {
 }
 
 .hero {
+  padding: 188px 0;
   background-color: var(--secondary-text-color);
   text-align: center;
 }
 
 .hero-title {
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
+
   margin-bottom: 48px;
 
   font-size: 56px;
@@ -148,6 +157,7 @@ body {
 .order-btn {
   font-family: inherit;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.04em;
@@ -225,7 +235,7 @@ body {
 
 .wrapper {
   text-align: center;
-  padding: 16px 34px;
+  padding: 32px 16px;
 }
 
 /* FUTURE */
@@ -247,13 +257,8 @@ body {
   display: flex;
 }
 
-.projects-list > .item {
-  display: block;
+.projects-list > .item:not(:last-child) {
   margin-right: 24px;
-}
-
-.projects-list > .item:last-child {
-  margin-right: 0;
 }
 
 /* TEAM */
@@ -267,7 +272,10 @@ body {
 
 .team-list .item {
   background-color: var(--white-color);
-  display: block;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+
   margin-right: 24px;
 }
 
@@ -295,6 +303,7 @@ section.products {
   padding: 12px 24px;
   font-family: inherit;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.04em;
@@ -344,9 +353,16 @@ footer {
   padding-bottom: 100px;
 }
 
-footer .logo {
-  display: inline-block;
+.footer-logo {
+  display: block;
   margin-bottom: 16px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--light-mode-color);
 }
 
